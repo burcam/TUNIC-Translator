@@ -1,0 +1,36 @@
+<head>
+    <meta charset="UTF-8">
+    <title>TUNIC Translator</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<html>
+    <body>
+        <script src="index.js"></script>
+        <p>Simply click on the parts of the diamond to create the phoneme.</p>
+        <div class="diamond">
+    <div class="top head">
+        <button class="edge angle-30" onclick="updateOutside(OutsideValues.topLeft, this)" style="top:40px">Outside top left</button>
+        <button class="edge angle30" onclick="updateOutside(OutsideValues.topRight, this)" style="top:30px;left:170px">Outside top right</button>
+    </div>
+    <div class="top middle">
+        <button class="edge angle90" onclick="updateOutside(OutsideValues.topSide, this)" style="top:140px;left:-80px">Outside top side</button>
+        <button class="edge angle45" onclick="updateInside(InsideValues.topLeft, this)" style="top:115px; width: 230px; left: -10px;">Inside top left</button>
+        <button class="edge angle90" onclick="updateInside(InsideValues.topCenter, this)" style="top:75px;left:35px;width:300px">Inside top center</button>
+        <button class="edge angle-45" onclick="updateInside(InsideValues.topRight, this)" style="top:90px;left:150px;width: 230px;">Inside top right</button>
+    </div>
+    <div class="divider"></div>
+    <div class="bottom middle">
+        <button class="edge angle90" onclick="updateOutside(OutsideValues.bottomSide, this)" style="top:100px;left:-80px">Outside bottom side</button>
+        <button class="edge angle-50" onclick="updateInside(InsideValues.bottomLeft, this)" style="width:260px; top:85px;left:-30px">Inside bottom left</button>
+        <button class="edge angle90" onclick="updateInside(InsideValues.bottomCenter, this)" style="top:120px;left:35px;width:300px;">Inside bottom center</button>
+        <button class="edge angle50" onclick="updateInside(InsideValues.bottomRight, this)" style="width:260px;top:65px;left:140px">Inside bottom right</button>
+    </div>
+    <div class="bottom foot">
+        <button class="edge angle30" onclick="updateOutside(OutsideValues.bottomLeft, this)" style="top:-10px;">Outside bottom left</button>
+        <button class="edge angle-30" onclick="updateOutside(OutsideValues.bottomRight, this)" style="top:-20px;left:170px">Outside bottom right</button>
+    </div>
+    <button class="circle" onclick="updateOrder(this)" style="left:160px;"></button>
+</div>
+        <p id="result"></p>
+    </body>
+</html>

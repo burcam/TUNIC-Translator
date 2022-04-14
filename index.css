@@ -1,0 +1,63 @@
+.top,.bottom{
+    position:relative;
+}
+
+.edge{
+    background-color: grey;
+    font-size: 0;
+    height: 10px;
+    width: 200px;
+    position: relative;
+}
+.edge.selected, .circle.selected{
+    background-color: black;
+    color: white;
+}
+.top.head,.bottom.foot{
+    height: 50px;
+    width: 250px;
+}
+.top.middle, .bottom.middle{
+    height: 250px;
+    width: 275px;
+}
+.edge.angle30{
+    transform: rotate(30deg);
+    top: 40px;
+}
+.edge.angle-30{
+    transform: rotate(-30deg);
+    top: 40px;
+}
+.edge.angle45{
+    transform: rotate(45deg);
+}
+.edge.angle-45{
+    transform: rotate(-45deg);
+}
+
+.edge.angle50{
+    transform: rotate(50deg);
+}
+.edge.angle-50{
+    transform: rotate(-50deg);
+}
+
+.edge.angle90{
+    transform: rotate(90deg);
+    
+}
+
+.divider{
+    background-color: black;
+    height:5px;
+    width: 400px;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    position:relative;
+}
